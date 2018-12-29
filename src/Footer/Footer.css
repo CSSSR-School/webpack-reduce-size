@@ -1,0 +1,37 @@
+.Footer {
+  margin-top: 24px;
+  padding: 24px 16px;
+  background: #e0e0e0;
+}
+
+.Footer p {
+  margin: 0 0 8px;
+}
+
+.Footer a {
+  text-decoration: none;
+  color: #3a9af3;
+  transition: color 0.3s;
+}
+
+.Footer__icon {
+  margin-right: 6px;
+}
+
+.Footer__icon svg {
+  width: 16px;
+  fill: #3a9af3;
+  transition: fill 0.3s;
+}
+
+.Footer a:visited {
+  color: #3a9af3;
+}
+
+.Footer a:hover {
+  color: #eb4a34;
+}
+
+.Footer a:hover svg {
+  fill: #eb4a34;
+}

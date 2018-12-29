@@ -1,0 +1,26 @@
+.Post + .Post {
+  margin-top: 24px;
+}
+
+.Post__header {
+  display: flex;
+  padding: 16px;
+  background: #f4f4f4;
+}
+
+.Post__title {
+  margin: 0;
+}
+
+.Post__toggle {
+  margin-left: auto;
+  font-size: 15px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.Post__text {
+  padding: 16px;
+  font-size: 18px;
+  border-bottom: 1px solid #e0e0e0;
+}

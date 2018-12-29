@@ -1,0 +1,8 @@
+.App {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.App__title {
+  margin: 16px 0 24px;
+}
