@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 const env = process.env.NODE_ENV;
 const isDev = env !== 'production';
@@ -41,6 +42,9 @@ const config = {
     new CleanWebpackPlugin(path.resolve(__dirname, 'dist'), {}),
     new OptimizeCssAssetsPlugin({
       cssProcessorOptions: { discardComments: { removeAll: true } },
+    }),
+    new CompressionPlugin({
+      test: /\.js(\?.*)?$/i
     })
   ],
   module: {
